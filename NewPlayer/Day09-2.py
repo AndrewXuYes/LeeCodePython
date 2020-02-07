@@ -15,14 +15,12 @@ class Pet(object, metaclass=ABCMeta):
 
 class Dog(Pet):
     """狗"""
-
     def make_voice(self):
         print('%s: 汪汪汪...' % self._nickname)
 
 
 class Cat(Pet):
     """猫"""
-
     def make_voice(self):
         print('%s: 喵...喵...' % self._nickname)
 
