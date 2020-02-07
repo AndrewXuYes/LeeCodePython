@@ -48,6 +48,7 @@ def main3():
         resp = requests.get('http://api.tianapi.com/guonei/?key=APIKey&num=10')
         data_model = json.loads(resp.text)
         print(data_model)
+        # error
         for news in data_model:
             print(news['title'])
     except:
